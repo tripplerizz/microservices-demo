@@ -34,3 +34,6 @@ steps:
     skaffold run -f=skaffold.yaml --default-repo=gcr.io/$PROJECT_ID;
 
 # Add more power, and more time, for heavy Skaffold build
+timeout: '3600s'
+options:
+  machineType: 'E2_HIGHCPU_8'
