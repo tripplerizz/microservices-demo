@@ -30,11 +30,12 @@ steps:
   args:
   - '-c'
   - >
-    gcloud container clusters get-credentials --region=$_ZONE $_CLUSTER;
+    gcloud container clusters get-credentials --region=$_REGION $_CLUSTER;
     skaffold run -f=skaffold.yaml --default-repo=gcr.io/$PROJECT_ID;
 
 
 substitutions:
   _CLUSTER: central-non-prod
+  _REGION: us-central1
 
 
