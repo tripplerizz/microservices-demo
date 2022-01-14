@@ -41,7 +41,7 @@ images:
 - '${_IMAGE_PATH}'
 
 substitutions:
-  _IMAGE_PATH: us-central1-docker.pkg.dev/$PROJECT_ID/cymbal-shops/frontend
+  _IMAGE_PATH: us-central1-docker.pkg.dev/qwiklabs-gcp-03-da5cb6546dd6/cymbal-shops/frontend
   _REPOSITORY: cymbal-shops
   _IMAGE: frontend
   _LOCATION: us-central1
